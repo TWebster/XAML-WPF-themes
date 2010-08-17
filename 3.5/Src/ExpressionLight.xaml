@@ -20,7 +20,7 @@
         <GradientStop Color="#FF999999" Offset="1"/>
     </LinearGradientBrush>
     <SolidColorBrush x:Key="GlyphBrush" Color="#FFFFFFFF" />
-    <SolidColorBrush x:Key='DeselectedTabBrush' Color='#595959' />
+    <SolidColorBrush x:Key='RowHeaderPathBrush' Color='#595959' />
     <SolidColorBrush x:Key="DisabledBackgroundBrush" Color="#FFD4D4D4" />
     <SolidColorBrush x:Key="NormalBorderBrush" Color="#FF9B9999" />
     <LinearGradientBrush x:Key="HoverShineBrush" EndPoint="0.5,0.971" StartPoint="0.5,0.042">
@@ -205,7 +205,7 @@
     </DataTemplate>
     <DataTemplate x:Key='RowHeaderOnDetailsContentTemplate'>
         <Path Style='{StaticResource RowHeaderPathStyle}'
-              Fill='{StaticResource DeselectedTabBrush}'
+              Fill='{StaticResource RowHeaderPathBrush}'
               Stroke='Transparent'>
             <Path.RenderTransform>
                 <RotateTransform Angle='45' />
