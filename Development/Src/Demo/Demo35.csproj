@@ -107,8 +107,10 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="bin\WPFToolkit.dll" />
     <EmbeddedResource Include="Data\IndeedList.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="bin\WPFToolkit.dll" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
