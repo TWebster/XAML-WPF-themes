@@ -1,10 +1,18 @@
-﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+﻿<!--
+// Copyright (c) Trevor Webster
+// This source is subject to the Microsoft Public License (Ms-PL).
+// Please see http://go.microsoft.com/fwlink/?LinkID=131993 for details.
+// All other rights reserved.
+-->    
+    <ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
                     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
                     xmlns:toolkit="clr-namespace:Microsoft.Windows.Controls;assembly=WPFToolkit"
                     xmlns:primitives="clr-namespace:Microsoft.Windows.Controls.Primitives;assembly=WPFToolkit"
                     xmlns:my="clr-namespace:DataGridThemes"
                     xmlns:sys="clr-namespace:System;assembly=mscorlib"
                     >
+    
+    <!--BRUSHES-->
     <SolidColorBrush x:Key='DataGridLineBrush' Color='#FFD6D6D6' />
     <SolidColorBrush x:Key="NormalBrush" Color="#FF939393" />
     <LinearGradientBrush x:Key="SelectedBackgroundBrush" EndPoint="0.5,1" StartPoint="0.5,0">
@@ -30,8 +38,8 @@
         <GradientStop Color="#26FFFFFF" Offset="0.467" />
         <GradientStop Color="#00FFFFFF" Offset="0.475" />
     </LinearGradientBrush>
-
-    <!--DATAGRID -->
+    <!---->
+    
     <sys:Double x:Key='cellHeight'>24</sys:Double>
     <!-- RowStyle-->
     <Style x:Key='RowStyle' TargetType="{x:Type toolkit:DataGridRow}">
@@ -103,10 +111,7 @@
                                                                x:Name='DetailsPresenter' 
                                                                primitives:SelectiveScrollingGrid.SelectiveScrollingOrientation="{Binding RelativeSource={RelativeSource AncestorType={x:Type toolkit:DataGrid}}, Path=AreRowDetailsFrozen, Converter={x:Static toolkit:DataGrid.RowDetailsScrollingConverter}, ConverterParameter={x:Static toolkit:SelectiveScrollingOrientation.Vertical}}"                                                                                                                         
                                                                Visibility="{TemplateBinding DetailsVisibility}"                                                               
-                                                               />
-                            <!--can use attached property (in Controls) to animate fixed-size RowDetailsTemplates-->
-                            <!--to support row details animation, but currently has sizing issues if the child content resizes-->
-                            <!--DetailsVisibility='{Binding RelativeSource={RelativeSource TemplatedParent}, Path=DetailsVisibility}'-->
+                                                               />                            
                             <Rectangle Height="1" HorizontalAlignment="Stretch" 
                                        x:Name="BottomGridLine" 
                                        Fill="{StaticResource DataGridLineBrush}" 
@@ -401,7 +406,7 @@
 
 
     </Style>
-    <!-- DataGrid Default Style -->
+    <!-- The DataGrid -->
     <Style TargetType='{x:Type toolkit:DataGrid}'>
         <Setter Property='ScrollViewer.CanContentScroll' Value='False' />
         <Setter Property='AutoGenerateColumns' Value='False' />
