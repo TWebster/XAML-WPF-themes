@@ -14,15 +14,16 @@
     
     <!--BRUSHES-->
     <SolidColorBrush x:Key='DataGridLineBrush' Color='#FFC9CACA' />
-    <SolidColorBrush x:Key="NormalBrush" Color="#FF939393" />
+    <SolidColorBrush x:Key="NormalBrush" Color="#FF595959" />
     <LinearGradientBrush x:Key="SelectedBackgroundBrush" EndPoint="0.5,1" StartPoint="0.5,0">
         <GradientStop Color="#FFFFFFFF"/>
-        <GradientStop Color="#FF999999" Offset="1"/>
+        <GradientStop Color="#FF737373" Offset="1"/>
     </LinearGradientBrush>
-    <SolidColorBrush x:Key="GlyphBrush" Color="#FFFFFFFF" />
-    <SolidColorBrush x:Key='DeselectedTabBrush' Color='#595959' />
-    <SolidColorBrush x:Key="DisabledBackgroundBrush" Color="#FFD4D4D4" />
-    <SolidColorBrush x:Key="NormalBorderBrush" Color="#FF9B9999" />
+    <!--<SolidColorBrush x:Key="GlyphBrush" Color="#FFFFFFFF" />-->
+    <SolidColorBrush x:Key="GlyphBrush" Color="#FFD1D1D1" />
+    <SolidColorBrush x:Key='RowHeaderPathBrush' Color='#595959' />
+    <SolidColorBrush x:Key="DisabledBackgroundBrush" Color="#FF787878" />
+    <SolidColorBrush x:Key="NormalBorderBrush" Color="#FF333333" />
     <LinearGradientBrush x:Key="HoverShineBrush" EndPoint="0.5,0.971" StartPoint="0.5,0.042">
         <GradientStop Color="#4CFFFFFF" Offset="0" />
         <GradientStop Color="#26FFFFFF" Offset="1" />
@@ -30,8 +31,8 @@
         <GradientStop Color="#00FFFFFF" Offset="0.475" />
         <GradientStop Color="#00FFFFFF" Offset="0.856" />
     </LinearGradientBrush>
-    <SolidColorBrush x:Key="ControlBackgroundBrush" Color="#FFD6D6D6" />
-    <SolidColorBrush x:Key="TextBrush" Color="#000000" />
+    <SolidColorBrush x:Key="ControlBackgroundBrush" Color="#FF333333" />
+    <SolidColorBrush x:Key="TextBrush" Color="#FFFFFFFF" />
     <LinearGradientBrush x:Key="ShineBrush" EndPoint="0.5,0.971" StartPoint="0.5,0.042">
         <GradientStop Color="#59FFFFFF" Offset="0" />
         <GradientStop Color="#00FFFFFF" Offset="1" />
@@ -205,7 +206,7 @@
     </DataTemplate>
     <DataTemplate x:Key='RowHeaderOnDetailsContentTemplate'>
         <Path Style='{StaticResource RowHeaderPathStyle}'
-              Fill='{StaticResource DeselectedTabBrush}'
+              Fill='{StaticResource RowHeaderPathBrush}'
               Stroke='Transparent'>
             <Path.RenderTransform>
                 <RotateTransform Angle='45' />
