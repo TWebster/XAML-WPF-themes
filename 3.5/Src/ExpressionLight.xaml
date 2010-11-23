@@ -212,6 +212,7 @@
             </Path.RenderTransform>
         </Path>
     </DataTemplate>
+        <!--DataGridRowHeader-->
     <my:DataGridRowHeaderCommand x:Key="deselectRowCommand" />
     <Style x:Key='RowHeaderStyle' TargetType='{x:Type primitives:DataGridRowHeader}'>
         <Setter Property='MinHeight' Value='{StaticResource cellHeight}' />
