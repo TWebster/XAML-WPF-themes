@@ -30,7 +30,6 @@
         </Setter>
     </Style>
     <Style x:Key='ColumnHeaderStyle' TargetType='{x:Type primitives:DataGridColumnHeader}'>
-        <Setter Property='VerticalContentAlignment' Value='Center' />
         <Setter Property="SnapsToDevicePixels" Value="True" />
         <Setter Property="HorizontalContentAlignment" Value="Center" />
         <Setter Property="VerticalContentAlignment" Value="Center" />
@@ -323,10 +322,10 @@
         <Setter Property='AutoGenerateColumns' Value='False' />
         <Setter Property="IsTabStop" Value="True" />
         <Setter Property="RowBackground" Value="#FFFFFFFF"/>
-        <Setter Property="Background" Value="#FFFFFFFF"/>        
-        <Setter Property="AlternatingRowBackground" Value="{StaticResource HorizontalVerticalGridLinesBrush}"/>
+        <Setter Property="Background" Value="#FFFFFFFF"/>
+        <Setter Property="AlternatingRowBackground" Value="#FFFFFFFF"/>
         <Setter Property="HorizontalGridLinesBrush" Value="{StaticResource HorizontalVerticalGridLinesBrush}"/>
-        <Setter Property="VerticalGridLinesBrush" Value="#59D6D7D6"/>
+        <Setter Property="VerticalGridLinesBrush" Value="{StaticResource HorizontalVerticalGridLinesBrush}"/>
         <Setter Property="BorderBrush" Value="{StaticResource GridBorder}" />
         <Setter Property="BorderThickness" Value="1" />
         <Setter Property='GridLinesVisibility' Value='All' />      
