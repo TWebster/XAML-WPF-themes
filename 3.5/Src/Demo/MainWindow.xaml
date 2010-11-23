@@ -8,9 +8,11 @@
     <Window.Resources>
         <data:IndeedList x:Key="list" />
     </Window.Resources>
-    <Grid>
+    <StackPanel>
+
         <toolkit:DataGrid ItemsSource="{StaticResource list}"
                           AutoGenerateColumns="True"
                           />
-    </Grid>
+        
+    </StackPanel>
 </Window>

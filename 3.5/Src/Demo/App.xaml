@@ -3,8 +3,8 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              StartupUri="MainWindow.xaml">
     <Application.Resources>
-        <!--<ResourceDictionary Source="/DataGridThemes;component/ExpressionLight.xaml" />-->
+        <ResourceDictionary Source="/DataGridThemes;component/ExpressionLight.xaml" />
         <!--<ResourceDictionary Source="/DataGridThemes;component/ExpressionDark.xaml" />-->
-        <ResourceDictionary Source="/DataGridThemes;component/WhistlerBlue.xaml" />
+        <!--<ResourceDictionary Source="/DataGridThemes;component/WhistlerBlue.xaml" />-->
     </Application.Resources>
 </Application>
