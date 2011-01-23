@@ -82,6 +82,7 @@
   <ItemGroup>
     <Compile Include="DataGridHelper.cs" />
     <Compile Include="DataGridRowHeaderCommand.cs" />
+    <Compile Include="HorizontalMouseScrollHelper.cs" />
     <Compile Include="Properties\AssemblyInfo.cs">
       <SubType>Code</SubType>
     </Compile>

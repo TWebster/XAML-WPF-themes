@@ -27,7 +27,12 @@ namespace Demo.Data
 		public string Url { get; set; }
 		[DataMember]
 		public string OnMouseDown { get; set; }
-        public string Snippet { get; set; }				
+        public string Snippet { get; set; }
+
+		public override string ToString()
+		{
+			return string.Format("{0} {1} \n", this.JobTitle ?? string.Empty, this.Location ?? string.Empty);
+		}
 	}
     public class IndeedList : ObservableCollection<Indeed>
     {
