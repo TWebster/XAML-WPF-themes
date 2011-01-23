@@ -16,9 +16,10 @@
         </Grid.RowDefinitions>        
         <controls:DataGrid ItemsSource="{StaticResource list}"
                           AutoGenerateColumns="True"
+                          SelectionMode="Extended"
                           themes:DataGridHelper.HorizontalMouseWheelScrollingEnabled="True"
                           themes:DataGridHelper.SelectedCells="{Binding Path=myViewModelSourceList, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"                                                      
-                           
+                          
                           />        
         <TextBlock Text="{Binding Path=viewModelText, Mode=OneWay}" Opacity="0.7" Grid.Row="1" />
     </Grid>
